@@ -5,7 +5,7 @@ namespace GDI_Task_06
     class Program
     {
 
-        static string[] DefName = { "Яблонцев Мефодий Денисович", "Никитина Антонина Кузьмевна", 
+        static string[] DefName = { "Яблонцев Мефодий Денисович", "Никитина Антонина Кузьмевна", //Дефолтные массивы, которые можно использовать вместо составления своих
                                     "Пороник Михаил Михаилович", "Блинова Кира Юрьевна",
                                     "Баландина Лиана Сигизмундовна", "Наполов Харитон Мартьянович", 
                                     "Артемьев Вадим Всеволодович", "Ратников Феоктист Матвеевич", 
@@ -31,7 +31,7 @@ namespace GDI_Task_06
             count = N.Length;
             boof = new string[count];
 
-            if ((s != "") && (s != "-"))
+            if ((s != "") && (s != "-"))//Ввод имени
             {
                 count++;
                 boof = N;
@@ -42,18 +42,18 @@ namespace GDI_Task_06
 
                 N[count - 1] = s;
             }
-            else if (s == "")
+            else if (s == "")//проверка на пустоту
             {
                 Console.WriteLine("Ошибка!!! Строка пуста! Для отмены введите -");
                 goto reN;
             }
-            else if (s == "-") return;
+            else if (s == "-") return;//отмена операции
 
             reP:
             Console.Write("Введите Должность сотрудника: ");
             s = Console.ReadLine();
 
-            if (s != "")
+            if (s != "")//Ввод должности
             {
                 boof = P;
                 P = new string[count];
@@ -71,7 +71,7 @@ namespace GDI_Task_06
             }
         }
 
-        static void Find(string[] N, string[] P)
+        static void Find(string[] N, string[] P)//Метод поиска по имени
         {
             string F;
             bool Fin;
@@ -83,7 +83,7 @@ namespace GDI_Task_06
             Console.Clear();
             for (int i = 0; i < N.Length; i++)
             {
-                Fin = N[i].Contains(F, StringComparison.CurrentCultureIgnoreCase);
+                Fin = N[i].Contains(F, StringComparison.CurrentCultureIgnoreCase);//поиск совпадений без учёта регистра
                 if(Fin == true)
                 {
                     Console.WriteLine($"{i + 1}.\t{N[i]}-\t{P[i]}");
@@ -101,7 +101,7 @@ namespace GDI_Task_06
             Console.ReadKey();
         }
 
-        static void Del(ref string[] N, ref string[] P)
+        static void Del(ref string[] N, ref string[] P)//Метод удаления данных
         {
             int DelNum;
             string[] DelBoofN, DelBoofP;
@@ -159,7 +159,7 @@ namespace GDI_Task_06
 
         }
 
-        static void Menu(ref string[] N, ref string[] P)
+        static void Menu(ref string[] N, ref string[] P)//Метод интерфейса
         {
             ConsoleKeyInfo key;
 
@@ -224,7 +224,7 @@ namespace GDI_Task_06
         static void Main(string[] args)
         {
             string[] Name = new string[0]; 
-            string[] Position = new string[0];
+            string[] Position = new string[0];//Объявление рабочих массивов
 
             int origWidth, origHeight;
 
