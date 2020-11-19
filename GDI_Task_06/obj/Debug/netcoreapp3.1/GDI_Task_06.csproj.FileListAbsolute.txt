@@ -1,0 +1,13 @@
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.exe
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.deps.json
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.runtimeconfig.json
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.runtimeconfig.dev.json
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.dll
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\bin\Debug\netcoreapp3.1\GDI_Task_06.pdb
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.csprojAssemblyReference.cache
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.AssemblyInfoInputs.cache
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.AssemblyInfo.cs
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.csproj.CoreCompileInputs.cache
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.dll
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.pdb
+C:\Users\Дима\Desktop\Home Work\Практика\TrainingPractice_01\GDI_Task_06\obj\Debug\netcoreapp3.1\GDI_Task_06.genruntimeconfig.cache
