@@ -5,7 +5,7 @@ namespace GDI_Task_06
     class Program
     {
 
-        static string[] DefName = { "Яблонцев Мефодий Денисович", "Никитина Антонина Кузьмевна", //Дефолтные массивы, которые можно использовать вместо составления своих
+        /*static string[] DefName = { "Яблонцев Мефодий Денисович", "Никитина Антонина Кузьмевна", //Дефолтные массивы, которые можно использовать вместо составления своих
                                     "Пороник Михаил Михаилович", "Блинова Кира Юрьевна",
                                     "Баландина Лиана Сигизмундовна", "Наполов Харитон Мартьянович", 
                                     "Артемьев Вадим Всеволодович", "Ратников Феоктист Матвеевич", 
@@ -14,7 +14,7 @@ namespace GDI_Task_06
                                         "Зав-хоз", "Менеджер", 
                                         "Программист", "Зав-хоз", 
                                         "Менеджер", "Программист", 
-                                        "Сисадмин", "Менеджер" };
+                                        "Сисадмин", "Менеджер" };*/
 
         static void Addfile(ref string[] N, ref string[] P)//Добавление досье
         {
@@ -96,7 +96,7 @@ namespace GDI_Task_06
         {
             for(int i = 0; i < N.Length; i++)
             {
-                Console.WriteLine($"{i+1}.\t{P[i]}  \t-{N[i]}");
+                Console.WriteLine($"{i+1}.\t{N[i]}  \t-{P[i]}");
             }
             Console.ReadKey();
         }
@@ -173,15 +173,14 @@ namespace GDI_Task_06
 |__/|__/\___/_/\___/\____/_/ /_/ /_/\___/");
 
                 Console.WriteLine('\n');
-                Console.WriteLine("Управление:");
+                Console.WriteLine("Меню:");
                 Console.WriteLine("+ - Добавить досье.");
-                Console.WriteLine("* - Поиск досье по ФИО.");
-                Console.WriteLine("/ - Вывести все досье.\n");
-
-
-                Console.WriteLine("Пробел - Использовать заранее заготовленные массивы.");
-                Console.WriteLine("Delete - Удаление досье.\n");
+                Console.WriteLine("/ - Вывести все досье.");
+                Console.WriteLine("Delete - Удалить досье.");
+                Console.WriteLine("* - Поиск по фамилии.");
                 Console.WriteLine("Esc - Выход.");
+
+                //Console.WriteLine("Пробел - Использовать заранее заготовленные массивы."); Для упрощения ввода массива
 
                 key = Console.ReadKey(true);
 
@@ -199,11 +198,11 @@ namespace GDI_Task_06
                 {
                     Console.Clear();
                     Find(N, P);
-                }else if (key.Key == ConsoleKey.Spacebar)
+                /*}else if (key.Key == ConsoleKey.Spacebar)//Чтение команды для упрощённого ввода массива
                 {
                     Console.Clear();
                     N = DefName;
-                    P = DefPosition;
+                    P = DefPosition;*/
                 }else if (key.Key == ConsoleKey.Delete)
                 {
                     Console.Clear();
@@ -226,12 +225,12 @@ namespace GDI_Task_06
             string[] Name = new string[0]; 
             string[] Position = new string[0];//Объявление рабочих массивов
 
-            int origWidth, origHeight;
+            /*int origWidth, origHeight;
 
             origWidth = Console.WindowWidth;//Настраиваем окно командной строки
             origHeight = Console.WindowHeight;
 
-            Console.SetWindowSize(origWidth / 2, origHeight);
+            Console.SetWindowSize(origWidth / 2, origHeight);*/
 
             Menu(ref Name, ref Position);
         }
