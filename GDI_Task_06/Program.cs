@@ -174,27 +174,27 @@ namespace GDI_Task_06
 
                 Console.WriteLine('\n');
                 Console.WriteLine("Меню:");
-                Console.WriteLine("+ - Добавить досье.");
-                Console.WriteLine("/ - Вывести все досье.");
-                Console.WriteLine("Delete - Удалить досье.");
-                Console.WriteLine("* - Поиск по фамилии.");
-                Console.WriteLine("Esc - Выход.");
+                Console.WriteLine("1 - Добавить досье.");
+                Console.WriteLine("2 - Вывести все досье.");
+                Console.WriteLine("3 - Удалить досье.");
+                Console.WriteLine("4 - Поиск по фамилии.");
+                Console.WriteLine("5 - Выход.");
 
                 //Console.WriteLine("Пробел - Использовать заранее заготовленные массивы."); Для упрощения ввода массива
 
                 key = Console.ReadKey(true);
 
-                if(key.Key == ConsoleKey.Add)
+                if(key.Key == ConsoleKey.NumPad1)
                 {
                     Console.Clear();
                     Addfile(ref N, ref P);
 
-                }else if(key.Key == ConsoleKey.Divide)
+                }else if(key.Key == ConsoleKey.NumPad2)
                 {
                     Console.Clear();
                     Masout(N, P);
 
-                }else if (key.Key == ConsoleKey.Multiply)
+                }else if (key.Key == ConsoleKey.NumPad4)
                 {
                     Console.Clear();
                     Find(N, P);
@@ -203,12 +203,12 @@ namespace GDI_Task_06
                     Console.Clear();
                     N = DefName;
                     P = DefPosition;*/
-                }else if (key.Key == ConsoleKey.Delete)
+                }else if (key.Key == ConsoleKey.NumPad3)
                 {
                     Console.Clear();
                     Del(ref N, ref P);
                 }
-            } while (key.Key != ConsoleKey.Escape);
+            } while (key.Key != ConsoleKey.NumPad5);
 
             Console.Clear();
             Console.WriteLine(@"   ______                ____             
